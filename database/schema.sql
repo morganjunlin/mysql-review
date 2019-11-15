@@ -1,6 +1,6 @@
 USE ReviewDB;
 
-CREATE TABLE Notebook (
+CREATE TABLE notebooks (
   id int auto_increment not null primary key,
   person varchar(255),
   thing varchar(255)

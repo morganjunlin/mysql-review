@@ -24,6 +24,5 @@ const things = [
 ]
 
 things.forEach(({ name, task }) => {
-  // insert name and task into notebook
-  db.query(`INSERT INTO notebook (person_name, task) VALUES ("${name}", "${task}");`)
+  db.query(`INSERT INTO notebooks (person_name, task) VALUES ("${name}", "${task}");`)
 })

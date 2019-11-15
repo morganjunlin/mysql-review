@@ -1,5 +1,6 @@
-const db = require('./index.js');
+const Notebook = require('./model.js');
 
+/*
 module.exports = {
   getAllTasks: (callback) => {
     db.query(`SELECT * FROM notebook;`, (err, result) => {
@@ -20,4 +21,10 @@ module.exports = {
       }
     })
   }
+}
+*/
+
+module.exports = {
+  getAllTasks: () => Notebook.findAll(),
+  postOneTask: ({ name, task }) => db.create({ person_name: name, task })
 }
