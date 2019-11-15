@@ -11,6 +11,7 @@ This repo is recommended to be used with `MySQL 5.7`.
 
 ### Documentation
 * [MySQL](https://github.com/mysqljs/mysql): MySQL Github documentation
+* [Sequelize](https://sequelize.org/master/manual/getting-started): Sequelize documentation
 
 
 ## Step 1
@@ -18,7 +19,7 @@ This repo is recommended to be used with `MySQL 5.7`.
 * Establish connection to database in `database/index.js`
 
 ## Step 2
-* Create a schema in `database/schema.sql` to describe our `Something` table
+* Create a schema in `database/schema.sql` to describe our `Notebook` table
 * Run schema file in terminal
 
 ## Step 3
@@ -34,5 +35,8 @@ This repo is recommended to be used with `MySQL 5.7`.
 * Test for working functionality via Postman
 
 ## OPTIONAL STEP
-* Refactor model/helper functions to utilize Sequelize
+Refactor the following files to utilize Sequelize ORM:
+* `database/index.js`
+* `database/dbHelpers.js`
+* `server/controllers.js`
 
