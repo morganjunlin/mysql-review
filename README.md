@@ -19,11 +19,11 @@ This repo is recommended to be used with `MySQL 5.7`.
 * Establish connection to database in `database/index.js`
 
 ## Step 2
-* Create a schema in `database/schema.sql` to describe our `tasks` table
+* Create a schema in `database/schema.sql` to describe our `Notebook` table
 * Run schema file in terminal
 
 ## Step 3
-* Create a seeding function in `database/seed.js` to populate table with at least 5 records
+* Create a seeding function in `database/seed.js` to populate table with at least 5 `Things`
 * Run seed file in terminal
 
 ## Step 4
@@ -39,6 +39,4 @@ Refactor the following files to utilize Sequelize ORM:
 * `database/index.js`
 * `database/dbHelpers.js`
 * `server/controllers.js`
-
-*NOTE*: You may need to create an additional `database/model.js` to allow Sequelize to define our `tasks` table model
 
