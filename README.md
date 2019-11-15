@@ -2,14 +2,15 @@
 > A quick review of connecting a MySQL database to our Express server
 
 ### Usage
-
 ```
 npm install
 npm run start
 ```
 
+This repo is recommended to be used with `MySQL 5.7`.
+
 ### Documentation
-[mysqljs](https://github.com/mysqljs/mysql) - MySQL documentation
+* [MySQL](https://github.com/mysqljs/mysql): MySQL Github documentation
 
 
 ## Step 1
@@ -25,13 +26,13 @@ npm run start
 * Run seed file in terminal
 
 ## Step 4
-* Create controller functions in `server/controllers.js`
 * Create dbHelper functions in `database/dbHelpers.js`
-* Use dbHelper functions in your controller functions
+* Create controller functions in `server/controllers.js`
+* Use dbHelper functions within your controller functions
 
 ## Step 5
-* Test via Postman
+* Test for working functionality via Postman
 
 ## OPTIONAL STEP
-Refactor model/helper functions to utilize Sequelize
+* Refactor model/helper functions to utilize Sequelize
 
