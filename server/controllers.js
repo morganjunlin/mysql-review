@@ -1,23 +1,10 @@
-const dbHelpers = require('../database/dbHelpers.js')
-
 module.exports = {
   getStuff: (req, res) => {
-    dbHelpers.getAllTasks((err, results) => {
-      if (err) {
-        res.status(404).send('Error getting stuff from database', err)
-      } else {
-        res.status(200).send(results)
-      }
-    })
+    console.log(req.body)
+    res.send('Hello World')
   },
 
-  postStuff: ({ body }, res) => {
-    dbHelpers.postOneTask(body, (err) => {
-      if (err) {
-        res.status(400).send('Error posting task in DB', err)
-      } else {
-        res.status(201).send(`Successfully added task ${body.task} to DB`)
-      }
-    })
+  postStuff: (req, res) => {
+    res.send(`Hi, I'm post request`)
   }
 }
